@@ -1,0 +1,27 @@
+body {
+    background-color: #49496d;
+}
+
+.page-header {
+    text-align: center;
+    
+}
+
+.title {
+    color: #ffffff;
+    font-size: 50px;
+}
+
+.clip-art {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+#city-weather {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}

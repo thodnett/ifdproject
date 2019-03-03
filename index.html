@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Weather</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+    <div class="page-header">
+        <h1 class="title">Weather <small class "small">Check the forecast!</small></h1>
+    </div>
+
+    
+     <img src="assets/images/weather.jpg" class="clip-art"></img>
+
+    <section class="container-fluid">
+        <div class="row bg-color-contact">
+            <div class="col">
+                <h3 class="location-heading uppercase text-center">Choose your location</h3>
+               
+                <div class="center-form">
+                    <input type="text" id="city-weather" value="Search for location" oninput="fetchGitHubInformation()" />
+                    <div id="gh-user-data"></div>
+                    <div id="gh-repo-data"></div>
+
+                </div>
+
+            </div>
+        </div>
+</section>
+
+</body>
+
+</html>
