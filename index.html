@@ -1,39 +1,59 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
 
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
     <title>Weather</title>
 
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" type="text/css" />
+
 </head>
+
 
 <body>
 
     <div class="page-header">
-        <h1 class="title">Weather <small class "small">Check the forecast!</small></h1>
+        <h1 class="title">Weather <small class="small">Check the forecast!</small></h1>
     </div>
 
-    
-     <img src="assets/images/weather.jpg" class="clip-art"></img>
 
-    <section class="container-fluid">
-        <div class="row bg-color-contact">
-            <div class="col">
-                <h3 class="location-heading uppercase text-center">Choose your location</h3>
-               
-                <div class="center-form">
-                    <input type="text" id="city-weather" value="Search for location" oninput="fetchGitHubInformation()" />
-                    <div id="gh-user-data"></div>
-                    <div id="gh-repo-data"></div>
+    <img src="assets/images/weather.jpg" class="clip-art">
 
+    <div class="container">
+        <div class="row">
+            <h3 class="text-center text-primary">Enter City Name!</h3>
+            <span id="error"></span>
+        </div>
+        <div class="row form-group form-inline" id="rowDiv">
+            <input type="text" name="location" id="city" class="form-control" placeholder="City Name">
+            <button id="submitweather" class=b tn btn-primary>Search City</button>
+        </div>
+    </div>
+    <div class="result-container">
+            <h2 id="city">Skibbereen</h2>
+            <div class="middle">
+                <img src="" alt="icon" id="icon">
+                <div class="degrees">
+                    <h1 id="temp">19</h1>
+                    <span>&#176;</span>
                 </div>
-
+                <h3 id="desc">Sunny</h3>
             </div>
         </div>
-</section>
+
+
+    
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+     <script src="assets/js/weather.js"></script>
+     
+
 
 </body>
 

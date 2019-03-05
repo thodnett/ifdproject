@@ -25,3 +25,23 @@ body {
     margin-right: auto;
     width: 30%;
 }
+
+#rowDiv {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.result-container {
+    border: 1px solid black;
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+
